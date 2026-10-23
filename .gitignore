@@ -1,0 +1,15 @@
+# Build artefacts
+*.shell-extension.zip
+schemas/gschemas.compiled
+
+# Local tooling
+node_modules/
+.eslintcache
+.prettiercache
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~

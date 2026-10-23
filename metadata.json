@@ -1,0 +1,9 @@
+{
+  "name": "System Monitor",
+  "description": "Real-time CPU, RAM, disk I/O, CPU/GPU temperature and fan speed in the top bar.\n\nSmall colour-coded icons keep the panel clean. Click the widget for quick toggles, refresh-rate control and compact mode, or open the full preferences window for colours and temperature thresholds.",
+  "uuid": "system-monitor@rajendrayadav.github.io",
+  "settings-schema": "org.gnome.shell.extensions.system-monitor",
+  "version": 2,
+  "shell-version": ["45", "46", "47", "48", "49", "50"],
+  "url": "https://github.com/rajendrakumaryadav/system-usages"
+}

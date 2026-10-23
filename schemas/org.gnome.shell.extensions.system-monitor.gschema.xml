@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+
+  <schema id="org.gnome.shell.extensions.system-monitor"
+          path="/org/gnome/shell/extensions/system-monitor/">
+
+    <!-- ── Behaviour ────────────────────────────────────────────────────── -->
+
+    <key name="update-interval" type="i">
+      <range min="500" max="10000"/>
+      <default>2000</default>
+      <summary>Update interval (ms)</summary>
+      <description>How often the panel values refresh, in milliseconds.</description>
+    </key>
+
+    <key name="compact-mode" type="b">
+      <default>false</default>
+      <summary>Compact mode</summary>
+      <description>Hide the icons and show only values.</description>
+    </key>
+
+    <!-- ── Visible metrics ──────────────────────────────────────────────── -->
+
+    <key name="show-cpu" type="b">
+      <default>true</default>
+      <summary>Show CPU usage</summary>
+      <description>Display overall CPU load in the top bar.</description>
+    </key>
+
+    <key name="show-ram" type="b">
+      <default>true</default>
+      <summary>Show RAM usage</summary>
+      <description>Display used physical memory as a percentage.</description>
+    </key>
+
+    <key name="show-disk" type="b">
+      <default>true</default>
+      <summary>Show disk I/O</summary>
+      <description>Display disk read and write throughput.</description>
+    </key>
+
+    <key name="show-temp" type="b">
+      <default>true</default>
+      <summary>Show CPU temperature</summary>
+      <description>Display the hottest CPU sensor.</description>
+    </key>
+
+    <key name="show-gpu-temp" type="b">
+      <default>true</default>
+      <summary>Show GPU temperature</summary>
+      <description>Display the GPU temperature when a GPU sensor is available.</description>
+    </key>
+
+    <key name="show-fan" type="b">
+      <default>true</default>
+      <summary>Show fan speed</summary>
+      <description>Display the highest fan speed when a fan sensor is available.</description>
+    </key>
+
+    <!-- ── Colours ──────────────────────────────────────────────────────── -->
+
+    <key name="cpu-color" type="s">
+      <default>'#f38ba8'</default>
+      <summary>CPU colour</summary>
+      <description>CSS colour used for the CPU metric.</description>
+    </key>
+
+    <key name="ram-color" type="s">
+      <default>'#a6e3a1'</default>
+      <summary>RAM colour</summary>
+      <description>CSS colour used for the RAM metric.</description>
+    </key>
+
+    <key name="disk-color" type="s">
+      <default>'#f9e2af'</default>
+      <summary>Disk colour</summary>
+      <description>CSS colour used for the disk read/write metrics.</description>
+    </key>
+
+    <key name="temp-color" type="s">
+      <default>'#89dceb'</default>
+      <summary>CPU temperature colour</summary>
+      <description>CSS colour used for the CPU temperature when it is below the warning threshold.</description>
+    </key>
+
+    <key name="gpu-color" type="s">
+      <default>'#94e2d5'</default>
+      <summary>GPU temperature colour</summary>
+      <description>CSS colour used for the GPU temperature when it is below the warning threshold.</description>
+    </key>
+
+    <key name="fan-color" type="s">
+      <default>'#89b4fa'</default>
+      <summary>Fan colour</summary>
+      <description>CSS colour used for the fan speed.</description>
+    </key>
+
+    <!-- ── Temperature thresholds ───────────────────────────────────────── -->
+
+    <key name="warning-temp" type="i">
+      <range min="30" max="110"/>
+      <default>75</default>
+      <summary>Warning temperature (°C)</summary>
+      <description>Temperature at which the metric switches to the warning colour.</description>
+    </key>
+
+    <key name="critical-temp" type="i">
+      <range min="40" max="120"/>
+      <default>85</default>
+      <summary>Critical temperature (°C)</summary>
+      <description>Temperature at which the metric switches to the critical colour.</description>
+    </key>
+
+  </schema>
+</schemalist>
