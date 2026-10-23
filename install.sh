@@ -38,7 +38,7 @@ DEST_DIR="$DATA_HOME/gnome-shell/extensions/$UUID"
 
 # Files used only while developing the repository. They are not part of the
 # installed extension and are stripped from the uploadable zip.
-DEV_FILES=(install.sh .gitignore README.md LICENSE)
+DEV_FILES=(install.sh .gitignore README.md TROUBLESHOOTING.md LICENSE)
 
 STAGE_DIR=""
 cleanup() {
